@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Envelope */
+.envelope {
+    width: 300px;
+    height: 200px;
+    background: #ff6b6b;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.envelope:before {
+    content: '';
+    position: absolute;
+    top: -90px;
+    left: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 90px solid #ff8e8e;
+}
+
+/* Question Screen */
+.question-screen {
+    display: none;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.question-screen h2 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.question-screen input {
+    padding: 15px;
+    font-size: 18px;
+    border: 3px solid #ff6b6b;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.question-screen button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Photos */
+.photo {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+/* Thunder */
+.thunder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+/* Name */
+.name-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    opacity: 0;
+    text-align: center;
+    transition: opacity 1s;
+}
+
+/* Romantic Message */
+.romantic-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    opacity: 0;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    transition: opacity 1s;
+}
+
+/* Final Message */
+.final-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff6b6b;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Hearts */
+.heart {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+/* Next Button */
+.next-btn {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.next-btn:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+}
+
+/* Message Box */
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 1000;
+}
