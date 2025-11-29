@@ -16,7 +16,7 @@ function checkAnswer() {
         document.getElementById('questionScreen').style.display = 'none';
         showHurray();
     } else {
-        alert('Close baby! But not quite right... Try "21 October" 😘');
+        alert(' not quite rightU Dont tell me you FORGOT... TrY Again" 😘');
     }
 }
 
@@ -26,7 +26,7 @@ function showHurray() {
     messageBox.innerHTML = `
         <div style="font-size: 50px; color: #ff6b6b; margin-bottom: 20px;">🎉 HURRAY! 🎉</div>
         <p style="font-size: 20px; margin-bottom: 20px;">You remembered my birthday! 💖</p>
-        <button class="next-btn" onclick="closeMessageAndStart()">Next Babe 💖</button>
+        <button class="next-btn" onclick="closeMessageAndStart()">click hereBabe 💖</button>
     `;
     document.body.appendChild(messageBox);
 }
@@ -41,10 +41,10 @@ function popOutPhotos() {
     
     // USING YOUR LOCAL IMAGES
     const photos = [
-        'image1.jpg',
-        'image2.jpg', 
-        'image3.jpg',
-        'image4.jpg'
+        'image1.jpg.JPG',
+        'image2.jpg.JPG', 
+        'image3.jpg.JPG',
+        'image4.jpg.JPG'
     ];
 
     const positions = [
