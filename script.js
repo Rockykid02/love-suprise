@@ -140,16 +140,25 @@ function showNameWithHearts() {
 }
 
 function showRomanticMessage() {
-    console.log("Showing romantic message!");
+    console.log("From my HEART❤️!");
     
     const message = document.createElement('div');
     message.className = 'romantic-message';
     message.innerHTML = `
         <h1>Hey Trish Babe... 💫</h1>
         <p style="font-size: 20px; line-height: 1.6; margin: 20px 0;">
-            Every moment with you feels like magic. Your smile lights up my world, 
-            your laugh is my favorite sound, and your love is the greatest gift 
-            I've ever received. I'm so incredibly lucky to have you in my life. 🌟
+            Hey Trish babe...
+
+I don't just see you in my present - I see you in every 
+one of my tomorrows. I picture us growing old together, 
+still laughing at the same stupid jokes, still holding 
+hands, still choosing each other every single day.
+
+With you, the future isn't scary - it's exciting. It's 
+full of adventures, lazy Sundays, and a love that just 
+keeps growing. I can't wait for all our moments to come.
+
+🚀. 🌟
         </p>
         <button class="next-btn" onclick="startPhotosGoBack()">Watch Magic Continue ✨</button>
     `;
@@ -161,7 +170,7 @@ function showRomanticMessage() {
 }
 
 function startPhotosGoBack() {
-    console.log("Photos going back!");
+    console.log("I truly love you!");
     document.querySelector('.romantic-message').remove();
     photosGoBack();
 }
