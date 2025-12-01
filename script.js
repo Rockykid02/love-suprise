@@ -90,7 +90,7 @@ const Animations = {
     createSparkleTrail: function(x, y) {
         for (let i = 0; i < 5; i++) {
             const sparkle = document.createElement('div');
-            sparkle.innerHTML = '✨';
+            sparkle.innerHTML = '✨SAGE';
             sparkle.style.cssText = `
                 position: fixed;
                 left: ${x}px;
@@ -469,7 +469,7 @@ function checkAnswer() {
         document.getElementById('questionScreen').style.display = 'none';
         showHurray();
     } else {
-        alert('Close baby! But not quite right... Try "21 October" 😘');
+        alert(' not quite right... Try Again" 😘');
     }
 }
 
@@ -493,10 +493,10 @@ function popOutPhotos() {
     console.log("Photos popping out!");
     
     const photos = [
-        'image1.jpg',
-        'image2.jpg', 
-        'image3.jpg',
-        'image4.jpg'
+        'image1.jpg.JPG',
+        'image2.jpg.JPG', 
+        'image3.jpg.JPG',
+        'image4.jpg.JPG'
     ];
 
     const positions = [
@@ -617,7 +617,7 @@ function startPhotosGoBack() {
     goingBackMsg.innerHTML = `
         <div style="text-align: center; padding: 20px;">
             <p style="font-size: 24px; color: #ff6b6b; margin-bottom: 20px;">
-                Our memories returning to the envelope... ✨
+                BYE LOVE... ✨
             </p>
             <p>Watch as our photos find their way back home 💖</p>
         </div>
