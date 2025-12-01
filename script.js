@@ -603,7 +603,7 @@ function showRomanticMessage() {
         message.style.opacity = '1';
         message.style.transition = 'opacity 1s';
         Animations.typewriterEffect(document.getElementById('typed-text'), 
-            "Every moment with you feels like magic. Your smile lights up my world, your laugh is my favorite sound, and your love is the greatest gift I've ever received. I'm so incredibly lucky to have you in my life. 🌟");
+            "I dont just see you in my presence-iI see you in every one of my Tomorrows.1 picture of us growing together'still laughing at the same stupid jokes'still holding hands and still choosing each other every single day.With you future is exciting'full of Adventures and love that just keeps growing.Icant wait for all our moments to come.Hence i dedicate this WEB as a token of LOVE TO YOU🌟");
     }, 100);
 }
 
